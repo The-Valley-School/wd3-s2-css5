@@ -1,3 +1,8 @@
+[Ejercicio](recursos/oura-rings.zip)
+
+--- 
+
+
 Llega el momento de practicar todo lo aprendido en esta sesión, y vamos a hacerlo con estas tarjetas de producto:
 
 ![Untitled](recursos/Untitled3.png)
