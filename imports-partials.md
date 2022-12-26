@@ -1,12 +1,10 @@
 ### PARTIALS / IMPORTS
 
-Sass te permite crear pequeños fragmentos de código con partes de SCSS que luego podamos ir reutilizando a lo largo de todo nuestro proyecto web. El enfoque es intentar modularizar al máximo para evitar repetir mucho código y que el proyecto sea mas mantenible.
+Sass nos permite crear pequeños fragmentos de código con partes de SCSS que luego podemos ir reutilizando a lo largo de todo nuestro proyecto web. El enfoque es intentar modularizar al máximo para evitar repetir mucho código y que así, el proyecto sea mas mantenible.
 
 El proceso sería el siguiente.
 
-- Creamos un fichero  con el código SCSS que nosotros deseemos, es importante que el nombre lleve delante un _
-
-  
+- Creamos un fichero con el código SCSS que queramos. Es importante que el nombre lleve delante una _
 
 ```scss
 // _initialize.scss
@@ -16,9 +14,8 @@ El proceso sería el siguiente.
 }
 ```
 
- 
 
-- Para incluirlo dentro de otro fichero SCSS bastará con utilizar @import y el nombre.
+- Para incluirlo dentro de otro fichero SCSS hay que utilizar @import y el nombre del archivo sin _ entre ''.
 
   
 
