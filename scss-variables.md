@@ -34,4 +34,4 @@ h1{
 
 - Si recordamos, podíamos usar variables en CSS del estilo —variable. La diferencia principal es que las variables Sass se compilan mientras las variables de CSS están incluidas en la salida de css.
 - Las variables de css pueden tener diferentes valores para diferentes elementos, en caso de las variables Sass solo tienen valor una vez.
-- Las variables Sass son *imperativas* , lo que significa que si usa una variable y luego cambia su valor, el uso anterior seguirá siendo el mismo. Las variables CSS SON *declarativas* , lo que significa que si cambia el valor, afectará tanto a los usos anteriores como a los posteriores.
+- Las variables Sass son *imperativas* , lo que significa que si se usa una variable y luego cambia su valor, el uso anterior seguirá siendo el mismo. Las variables CSS son *declarativas* , lo que significa que si cambia el valor, afectará tanto a los usos anteriores como a los posteriores.
