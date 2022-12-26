@@ -15,7 +15,7 @@ El proceso sería el siguiente.
 ```
 
 
-- Para incluirlo dentro de otro fichero SCSS hay que utilizar @import y el nombre del archivo sin _ entre ''.
+- Para incluirlo dentro de otro fichero SCSS hay que utilizar @import y el nombre del archivo sin _ entre '.
 
   
 
