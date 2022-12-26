@@ -8,6 +8,6 @@ Lo bueno de un preprocesador es que añade una serie de características adicion
 
 Cuando creas un archivo de SASS debes convertirlo a CSS para que lo entienda el navegador.
 
-Para ello puedes descargar esta herramienta
+Para ello puedes descargar este compilador
 
 > https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
