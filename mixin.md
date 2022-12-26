@@ -97,13 +97,13 @@ Aprovechamos también para hacer hincapié en el `@content` que nos permite pasa
 ```scss
 /* CSS */
 header {
-  height: 150px;
+	height: 150px;
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
-    height: 100px;
-  }
+	.header {
+		height: 100px;
+	}
 }
 
 ```
