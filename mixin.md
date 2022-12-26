@@ -1,9 +1,10 @@
-Son trozos de código CSS reutilizable a lo largo de nuestro proyecto web. Los creamos una vez y luego solo hay que llamarlos.
+### Mixings
 
-Vamos a hacer un ejemplo sencillo en el cual incluimos un color de fondo dentro de una  clase
+Los mixin son fragmentos de código CSS reutilizables a lo largo de nuestro proyecto web. Los creamos una vez y luego solo hay que llamarlos.
+
+Vamos a hacer un ejemplo sencillo en el cual añadimos un color de fondo dentro de una etiqueta
 
  
-
 ```scss
 // Creamos el mixin que devuelve el color
 
@@ -11,7 +12,7 @@ Vamos a hacer un ejemplo sencillo en el cual incluimos un color de fondo dentro 
 	color: red;
 }
 
-// lo incluimos dentro de nuestra clase
+// lo incluimos dentro de nuestro elemento 
 
 h1 {
 	@include theme();
@@ -19,9 +20,7 @@ h1 {
 
 ```
 
- 
-
-Podemos incluir un argumento a los mixins:
+Un mixin puede tener un argumento
 
 ```scss
 // Creamos el mixin que devuelve el color elegido
@@ -30,39 +29,37 @@ Podemos incluir un argumento a los mixins:
 	color: $value-one;
 }
 
-// lo incluimos dentro de nuestra clase
+// lo incluimos dentro de nuestro elemento
 
 h1 {
 	@include theme(red);
 }
 
 ```
-
-  
-
-O incluir varios: 
+ 
+o incluir varios: 
 
  
 
 ```scss
 // Creamos el mixin que devuelve el color elegido
 
-@mixin theme($value-one , $value-two){
+@mixin theme($value-one, $value-two){
 	color: $value-one;
 	font-size: $value-two;
 }
 
-// lo incluimos dentro de nuestra clase
+// lo incluimos dentro de nuestro elemento
 
-.header {
-	@include theme(red, white, 22px);
+header {
+	@include theme(red, 22px);
 }
 
 ```
 
    
 
-Un uso muy común de estos es para definir tamaños de pantalla con los que trabajar.
+Un uso muy común es para definir tamaños de pantalla con los que trabajar.
 
  
 
@@ -95,11 +92,11 @@ $media-tablet: 768px;
 
 ```
 
-Aprovechamos también para hacer hincapié en el @content que nos permitirá pasar contenido dinámico y usaremos mucho en este tipo de tareas.
+Aprovechamos también para hacer hincapié en el `@content` que nos permite pasar contenido dinámico y usaremos mucho en este tipo de tareas.
 
 ```scss
 /* CSS */
-.header {
+header {
   height: 150px;
 }
 
@@ -111,37 +108,37 @@ Aprovechamos también para hacer hincapié en el @content que nos permitirá pas
 
 ```
 
-También nos es de gran ayuda para trabajar con FLEX y GRID
+También es de gran ayuda para trabajar con FLEX y GRID
 
  
 
 ```scss
 //FLEX
 
-@mixin flexible( $dis , $direction , $cut , $just , $align ){
-    display         : $dis;
-    flex-flow       : $direction $cut;
-    justify-content : $just;
-    align-items     : $align;
+@mixin flexible($dis, $direction, $cut, $just, $align){
+    display: $dis;
+    flex-flow: $direction $cut;
+    justify-content: $just;
+    align-items: $align;
 }
 
 main{
-    @include flexible( flex , row , nowrap , center , center );
+    @include flexible(flex ,row ,wrap ,center ,center);
 }
 section{
-    @include flexible( flex , column , nowrap , flex-start , flex-start );
+    @include flexible(flex ,column ,nowrap ,flex-start , flex-end);
 }
 
 //GRID
 
 @mixin grid($size, $gap) {
-	display:grid;
-	grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
-	gap: $gap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+    gap: $gap;
 }
 
 main {
-	@include grid(200px, 10px)
+    @include grid(200px, 10px)
 }
 ```
 
