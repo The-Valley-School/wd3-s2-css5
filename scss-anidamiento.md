@@ -8,13 +8,13 @@ Imaginaos que tenemos el siguiente código en CSS enfocado al típico menú de n
 
 ```css
 nav ul {
-	 /* estilos */
+  /* estilos */
 }
 nav li {
-   /* estilos */
+  /* estilos */
 }
 nav a {
-   /* estilos */
+  /* estilos */
 }
 ```
 
@@ -26,15 +26,15 @@ Gracias a SCSS podemos hacerlo más legible y cómodo
 
 ```scss
 nav {
-	ul {
-		 /* estilos */
-	}
-	li {
-	   /* estilos */
-	}
-	a {
-	   /* estilos */
-	}
+  ul {
+    /* estilos */
+  }
+  li {
+    /* estilos */
+  }
+  a {
+    /* estilos */
+  }
 }
 ```
 
@@ -55,8 +55,8 @@ a {
 .bender {
   margin: 10px;
   &__arms {
-		color: red;
-	}
+    color: red;
+  }
 }
 ```
 
