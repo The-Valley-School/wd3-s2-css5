@@ -8,12 +8,12 @@ El uso de @extend nos permite compartir un conjunto de propiedades CSS de un s
 }
 
 .message {
-		@extend %message-shared;
+	@extend %message-shared;
 }
 
 .success {
-  @extend %message-shared;
-  border-color: green;
+	@extend %message-shared;
+	border-color: green;
 }
 ```
 
