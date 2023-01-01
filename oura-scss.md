@@ -1,4 +1,4 @@
-Ahora llega el turno ahora de trabajar con SCSS. Viendo la estructura de la web vamos a crear los siguientes ficheros con el objetivo de organizar el código:
+Ahora llega el turno de trabajar con SCSS. Viendo la estructura de la web que queremos desarrollar, vamos a crear los siguientes ficheros con el objetivo de organizar el código:
 
 - main.scss → será el fichero raíz
 
@@ -17,7 +17,7 @@ body{
 }
 ```
 
-- _variables.scss → guardaremos todas las variables que usemos
+- _variables.scss → donde guardaremos todas las variables que usemos
 
 ```scss
 $color-primary: #E5DED3;
@@ -103,13 +103,13 @@ $spacing: 20px;
         }
 
         .card__button{
-            color:  $color-card-1;
+            color: $color-card-1;
             background-color: $color-secondary;
             border: 1px solid $color-card-1;
 
             &:hover{
                 background-color: $color-card-1;
-                color:  $color-secondary;
+                color: $color-secondary;
             }
         }
     }
