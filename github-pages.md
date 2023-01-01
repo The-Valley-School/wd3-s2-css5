@@ -4,6 +4,6 @@ Para ello, una vez creado nuestro repositorio vamos a la sección ‘settings/pa
 
 ![Untitled](recursos/Untitled1.png)
 
-¡Seleccionando la rama podemos dar visibilidad a nuestra página de manera gratuita !
+¡Seleccionando la rama podemos dar visibilidad a nuestra página de manera gratuita!
 
 ![Untitled](recursos/Untitled2.png)
